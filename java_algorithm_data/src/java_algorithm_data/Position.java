@@ -65,4 +65,24 @@ public class Position {
  public String toString(){
 	 return "(" + x + ", " + y + ")";
  }
+ 
+ /*
+  * 位置が等しいかどうかを調べる
+  * @param o 比較の対象となる位置
+  * @return 等しければtrue, 等しくなければfalseを返す
+  */
+ public boolean equals(Object o){
+	 //パラメータoが，Positionクラスであることを確認する
+	 //positionクラスがなければ，falseを返す
+	 if(!(o instanceof Position)){
+		 return false;
+	 }
+	 //パラメータoをPosition型にキャストして
+	 //各フィールドの内容を比較する
+	 Position pos = (Position)o;
+	 return this.x == pos.x && this.y == pos.y;
+	 
+ }
+ 
+  
 }

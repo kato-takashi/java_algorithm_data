@@ -18,7 +18,7 @@ public class Robot {
   * 
   */
  public void moveX(int xDelta){
-	 position.moveX(xDelta);;
+	 position.moveX(xDelta);
  }
  
  /*
