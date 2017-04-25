@@ -1,6 +1,5 @@
 package java_algorithm_data;
 
-import java.nio.channels.IllegalSelectorException;
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
@@ -15,6 +14,9 @@ public class MyStack {
 	private static final int DEFAULT_STACK_SIZE = 100; //デフォルトのスタックの大きさ
 	/*スタックを生成する（大きさはDEFAULT_STACK_SIZE）
 	 * */
+	public MyStack(){
+		this(DEFAULT_STACK_SIZE);
+	}
 	public MyStack(int size){
 		stack = new Object[size];
 		stackSize = size;
